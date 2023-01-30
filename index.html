@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Rosenlund Solution</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="img/trs-square3.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"> -->
+<!-- <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'> -->
+
+<script type="text/javascript" src='modal.js'></script>
+<script src="w3.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+.trs-text-blue {color: #000026 !important;}
+.trs-text-green {color:  #004400 !important;}
+</style>
+</head>
+<body style="background-color: #000026;/*color: darkslategray;background-image: linear-gradient(to right, #000066 5% , #004400 70%);*/">
+
+<!-- Top menu -->
+<div class="w3-top" style="height: 65px;">
+  <div class="w3-white w3-text-white w3-xlarge" style="max-width:1200px;margin:auto;color: #000066 !important;background-color: #000026!important;height: 65px;">
+    <p class="w3-padding-16 w3-left w3-hover-text-light-blue w3-text-white" style="/*color: #000066;height: 65px;*/margin-left: 5px;margin-top: 5px;cursor: pointer;" onclick="w3_open()">☰</p>
+    <p class="w3-right w3-text-white w3-padding-16 w3-hide-small w3-hide-medium w3-hover-text-light-blue" style="margin-right: 5px;margin-top:  5px;cursor: pointer;">eMail</p>
+    <button class="w3-right w3-padding-16 w3-hide-small w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 18px;height: 65px;">eMail</button>
+    <button class="w3-right w3-padding-16 w3-hide-medium w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 15px;height: 65px;">eMail</button>
+    <div class="w3-center w3-padding-16">
+      <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-small w3-hide-medium" style="height:50px;width:50px;margin-top: -30px;margin-left: 35px;text-decoration: none;" alt="TheRosenlundSolution">
+        <img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-small w3-hide-large" style="height:50px;width:50px;margin-top: -30px;margin-left: 30px;text-decoration: none;" alt="TheRosenlundSolution"><br>
+      
+      <p class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: -20px;margin-left: 70px;">The Rosenlund Solution</p><br>
+      
+      <p class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: -53px;margin-left: 65px;">The Rosenlund Solution</p></a><br>
+
+      <!-- <p class="w3-hide-medium w3-hide-large w3-text-white" style="font-size: 8px;">The Rosenlund Solution</p></a> -->
+
+      <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-medium w3-hide-large" style="height:50px;width:50px;margin-top: -220px;margin-left: -5px;" alt="TheRosenlundSolution"></a><br>
+    </div>
+  </div>
+</div>
+
+
+<!-- Toggle menu for medium and large screens (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Blog</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">IT</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Info</a>
+</nav>
+
+
+<p class="w3-hide-large w3-hide-medium w3-text-white" style="font-size: 11px;margin-top: 60px;margin-bottom: -100px;text-align: center;/*color: #000066 !important;*/"><span style="font-size: 20px;">The Rosenlund Solution</span><br>Technical Understanding for Preparedness Solutions</p>
+<h6 class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;">Technical Understanding for Preparedness Solutions</h6>
+<h6 class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;margin-left: -15px;/*color: #000066 !important;*/">Technical Understanding for Preparedness Solutions</h6>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+
+    <div class="w3-quarter">
+      <img src="laptop-cleaning2.jpg" alt="Popsicle" style="width:100%">
+      <h3 class="w3-text-white">Cleaning Solutions</h3>
+      <button onclick="readMeClean('clean')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
+      Read More</button>
+
+      <div id="clean" class="w3-hide w3-container w3-light-grey">
+        <p>Cleaning concepts since the mid to late 90's<br>
+
+          Cleaning concepts engrained in me over the years from my mother, scouts, my dad and brothers business Healthy Clean Unlimited, the Marines, and then when Healthy Clean Unlimited was handed over to me years ago.   Many years later, what started out as cleaning carpets and upholstery has only grown.   We took on lawn care that expanded into cleaning up and organizing homes outside and in. And now my knowledge and understanding of cleaning practices has now expanded into all aspects of life.   What used to be just a floor cleaning business has now stretched into understanding technology because tech is very much also a good part of the life that we are all living.   So having a clean home means so much more than just having clean floors, furniture and a clean yard.   We now consider all aspects of our living environment that includes our electronic devices.<br>
+
+          Cleanliness has become a part of who we are.
+        </p>
+      </div>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="foodPrep.jpg" alt="Steak" style="width:100%">
+      <h3 class="w3-text-white">Organizational Solutions</h3>
+      <button onclick="readMeOrganize('organize')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
+      Read More</button>
+
+      <div id="organize" class="w3-hide w3-container w3-light-grey">
+        <p>Organizational practices since the 80's<br>
+
+          In my early youth my mother taught me the value in having a neat, clean and organized bedroom.   Even though I have not always been very good at keeping my room clean, it is what I strive for from day to day.   I had even taken my knowledge of organizing to a new level years ago when I was hired on by Clutter Cutters to gut out homes and bedrooms in homes and garage spaces and clean and orgainize them.   As I grew in knowledge and experience I began taking on team members.   I tried to help my team make sure that they had everything that they needed to clean and organize and I even tried to help them know what we were getting ourselves into.   Those were some good times learning and growing as a team.   We now believe in having a house of order and cleanliness and strive for this in our own home which gives us the knowledge and understanding of how we can help others in achieving the same.
+        </p>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <img src="security-solutions.jpg" alt="Cherries" style="width:100%">
+      <h3 class="w3-text-white">Security Solutions</h3>
+      <button onclick="readMeSecure('secure')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
+      Read More</button>
+
+      <div id="secure" class="w3-hide w3-container w3-light-grey">
+        <p>Security practices since the late 90's<br>
+
+          What started out as simply watching over scouts during scout camp in my youth, turned into securing buildings while working for a security company in the late 90's and on to the Marines as a grunt securing a multitude of other things as I have learned security practices and improvements over the years.   I have been around the world securing vehicles, parking lots, boat ramps, people, ammunition...the list goes on.   And then even for my church I served as Temple security for the Kansas City Missouri Temple for the Church of Jesus Christ of Latter Day Saints when it first opened for it's open house.   I also served as building lockup and security for a Ward in Rexburg Idaho for a time.   And now I am learning to secure computers and help with internet security, also known as cyber security and information security.   Security is very much an important part of every day life....especially in our increasingly growing sketchy world that we are now living in today.<br>
+
+          So as Master Yoda would say....<br>
+          "May the force be with you!" 
+        </p>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <img src="firstAid2.jfif" alt="Pasta and Wine" style="width:100%">
+      <h3 class="w3-text-white">Preparedness Solutions</h3>
+      <button onclick="readMePrep('prep')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
+      Read More</button>
+
+      <div id="prep" class="w3-hide w3-container w3-light-grey">
+        <p>Have been in a state of prep &quot;since I was knee high to a grass hopper&quot;<br>
+
+          Preparation for me started in the Scouts when I was in my youth.   Years later I joined the Marines where I took preparation to a whole new level.   Since then I have served as a youth leader for my church and have taken my knowledge from my entire life into family life.   We love the outdoors where we get to experience hiking, camping and overlanding.   We have felt that traveling and moving around has been helping us become better prepared.   We are not fully and completely prepared, but we are much closer now than we were 10 or more years ago. And the way we view preparedness is that we are in a constant state of prep and readiness because of how life randomly changes. 
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Pagination -->
+  <!--div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div-->
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center w3-text-white">  
+    <h3>Meet the Rosenlunds</h3><br>
+    <img src="58381085_2406534429357636_4803605506767716352_n.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+
+
+      <h4><b>Together exploring life and the great outdoors!</b></h4>
+      <h6><i>We absolutely love nature and the many beautiful wonders of God's creations!</i></h6>
+      <h3 class="w3-center"><span id="ProfileDate"></span></h3>
+      
+    </div>
+  </div>
+  <hr>
+  
+
+  <div class="w3-row-padding w3-center w3-text-white">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img class="w3-hide-small" src="MasterBrysenator-9.png" alt="John" style="width:100%">
+            <img class="w3-hide-large w3-hide-medium" src="img/MasterBrysenator-9.png" alt="John" style="width:50%">
+            <h3>Master Brysen</h3>
+            <p class="w3-opacity">The Lego Master</p>
+
+            <button onclick="readMeB('Brysen')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
+      Read More</button>
+
+            <div id="Brysen" class="w3-hide w3-container w3-light-grey">
+              <p>I am The Lego Master!  I enjoy spending time with family, building things, climbing in the outdoors and playing all kinds of sports and I absolutely love science and Primary.  My dad and me are good buds and I want to go fishing with him soon. 
+              </p>
+            </div>
+            
+            
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img class="w3-hide-small" src="beautiful2.jpg" alt="Jane" style="width:100%">
+            <img class="w3-hide-large w3-hide-medium" src="img/beautiful2.jpg" alt="Jane" style="width:50%">
+            <h3>Allison</h3>
+            <p class="w3-opacity">Mom</p>
+            <button onclick="readMeA('Alli')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
+      Read More</button>
+
+            <div id="Alli" class="w3-hide w3-container w3-light-grey">
+              <p>Hello, I am Allison.  I love Family, I love reading books when I can make time for it, I love art, especally puttng together challenging puzzles, I enjoy history and even a little bit of science, but I am especially into the beauty of Gods creations and in making home a wonderful place to have peace, love and joy.  My hobbies are Bird watching (especiall Owls and Eagles)Arts, Crafts, Board games and spending time with family.  For work, I specialize in office Solutions and in administrative duties.  Being personable with others has always brought me joy and success. 
+              </p>
+            </div>
+            
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img class="w3-hide-small" src="RyanReckons.jpg" alt="Mike" style="width:100%">
+            <img class="w3-hide-large w3-hide-medium" src="img/RyanReckons.jpg" alt="Mike" style="width:50%">
+            <h3>Ryan</h3>
+            <p class="w3-opacity">Dad</p>
+            <!-- <button onclick="readMeR('Ryan')" class="w3-button w3-light-grey">Read More</button> -->
+            <button onclick="readMeR('Ryan')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
+      Read More</button>
+
+            <div id="Ryan" class="w3-hide w3-container w3-light-grey">
+              <p>Hi, I&apos;m Ryan.  I am an organizer, prepper, technologist and an outdoor geek.  I love the great outdoors and the use of technology that helps me enjoy it.  My work and hobbies consist of technology and becoming organized and prepared.  I love the knowledge that we are part of an Eternal Family and that we can turn to a God that loves us and wants us to succeed in life.  The Gospel of Jesus Christ teaches us to learn of all things both in Heaven and on earth and to become the very best version of ourselves.  And I have loved learning about myself and have found joy in serving and helping others in becoming such. 
+              </p>
+            </div>
+            
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <img class="w3-hide-small" src="LittleMissElerae-7.png" alt="Dan" style="width:100%">
+            <img class="w3-hide-large w3-hide-medium" src="img/LittleMissElerae-7.png" alt="Dan" style="width:50%">
+            <h3>Miss Elerae</h3>
+            <p class="w3-opacity">Miss Ele</p>
+            <!-- <button onclick="readMeE('Elerae')" class="w3-button w3-light-grey">Read More</button> -->
+            <button onclick="readMeE('Elerae')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;">
+      Read More</button>
+
+            <div id="Elerae" class="w3-hide w3-container w3-light-grey">
+              <p>Hi, I am Miss Elerae! I love music and singing, dancing and want to become a ballerina if I can help it.  I also love art and coloring, playing outdoors in nature and I especially love my Brother Jesus.  He loves me and protects me every day! 
+              </p>
+            </div>
+            
+        </div>
+    </div>
+
+
+<!-- List of offerings. (For editing, see offerings.html) --> 
+<div class="w3-container w3-padding-32 w3-text-white">
+  <ul class=" w3-hide-medium w3-hide-small w3-xlarge w3-text-white">
+    <div w3-include-html="offerings.html"></div>
+  </ul>
+
+  <ul class=" w3-hide-large w3-hide-small w3-medium w3-text-white">
+    <div w3-include-html="offerings.html"></div>
+  </ul>
+
+  <ul class=" w3-hide-large w3-hide-medium w3-small w3-text-white">
+    <div w3-include-html="offerings.html"></div>
+  </ul> 
+</div>
+
+<!-- Welcome to our website message.  (For editing, see welcome.html) -->
+<div class="w3-container w3-padding-32 w3-text-white" style="margin-top: 5px;">
+  <h1 class="w3-center w3-xxlarge trs-text-dkblue w3-hide-medium w3-hide-small">
+    <div w3-include-html="welcome.html"></div>
+  </h1>
+  <h3 class="w3-center w3-large trs-text-dkblue w3-hide-large w3-hide-small">
+    <div w3-include-html="welcome.html"></div>
+  </h3>
+  <h6 class="w3-center w3-medium trs-text-dkblue w3-hide-medium w3-hide-large">
+    <div w3-include-html="welcome.html"></div>
+  </h6>
+</div>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32 w3-text-white">
+    <div class="w3-third">
+      <h3>Just so you know</h3>
+      <footer id="foot" class="w3-center w3-padding-48 w3-text-white" style="background-image: linear-gradient(to right, #000066 , #006600);z-index: 0;">
+        <!-- <div w3-include-html="footer.html"></div> -->
+        <div class="w3-hide-medium w3-hide-small"><!-- More content coming soon. (for editing, see comingSoon.html) -->
+          <p class="w3-text-white"><div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate"></span> <span id="TRSFullYear"></span></p>
+          <!-- TRS copyright. (for editing, see trsAtCopy.html) -->
+          <p class="w3-text-white"><div w3-include-html="trsAtCopy.html"></div><span id="FooterDate"></span></p>
+        </div>
+        <div class="w3-hide-large w3-hide-small w3-small">
+          <p class="w3-text-white"><div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate2"></span> <span id="TRSFullYear2"></span></p>
+          <p class="w3-text-white"><div w3-include-html="trsAtCopy.html"></div><span id="FooterDate2"></span></p>
+        </div>
+        <div class="w3-hide-large w3-hide-medium w3-xsmall">
+          <p class="w3-text-white"><div w3-include-html="comingSoon.html"></div><span id="CurrentUpdate3"></span> <span id="TRSFullYear3"></span></p>
+          <p class="w3-text-white"><div w3-include-html="trsAtCopy.html"></div><span id="FooterDate3"></span></p>
+        </div>
+      </footer>
+      <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul">
+        <li class="w3-padding-16">
+          <!-- <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px"> -->
+          <video style="width:90%;" controls>
+                    <source src="Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+          <span class="w3-large">Evening Moose</span><br>
+          <span>Tuesday, February 1st 2022</span><br>
+          <a href="#"><button class="w3-button w3-light-grey w3-round">See More</button></a>
+        </li>
+        <li class="w3-padding-16">
+          <img src="2021-10-05 17.07.28.jpg" class="w3-left w3-margin-right" style="width:90%;">
+          <span class="w3-large">Evening walk around Butte</span><br>
+          <span>Tuesday, October 5th 2021</span><br>
+          <a href="#"><button class="w3-button w3-light-grey w3-round">See More</button></a>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>Things we fnd joy in</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Family</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mountains</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nature</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Books</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Art</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Trails</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Music</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Movies</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Camping</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Technology</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Crafting</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Preparedness</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baking</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fishing</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// for date under family profile intro on main page
+var trsProfileDate = new Date();
+          
+document.getElementById("ProfileDate").innerHTML = trsProfileDate.getFullYear();
+      
+</script>
+<script type="text/javascript">
+  // When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+// window.onscroll = function() {scrollDisplayHeader()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("myBtn").style.display = "none";
+    } else {
+        document.getElementById("myBtn").style.display = "block";
+    }
+}
+</script>
+<script>
+
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function readMeClean(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMeOrganize(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMeSecure(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMePrep(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMeB(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMeA(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMeR(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function readMeE(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// Accordion
+/*function myAccordian(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}*/
+</script>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myDropDown() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+
+
+</script>
+<script>
+var d = new Date();
+
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("CurrentUpdate").innerHTML = months[d.getMonth()];
+document.getElementById("CurrentUpdate2").innerHTML = months[d.getMonth()];
+document.getElementById("CurrentUpdate3").innerHTML = months[d.getMonth()];
+
+
+</script>
+<!--script type="text/javascript">
+  var tFY = new Date();
+  document.getElementById("TRSFullYear").innerHTML = tFY.getFullYear();
+</script-->
+<script>
+// for date on all pages
+var trsFooterDate = new Date();
+
+document.getElementById("FooterDate").innerHTML = trsFooterDate.getFullYear();
+document.getElementById("FooterDate2").innerHTML = trsFooterDate.getFullYear();
+document.getElementById("FooterDate3").innerHTML = trsFooterDate.getFullYear();
+document.getElementById("TRSFullYear").innerHTML = trsFooterDate.getFullYear();
+document.getElementById("TRSFullYear2").innerHTML = trsFooterDate.getFullYear();
+document.getElementById("TRSFullYear3").innerHTML = trsFooterDate.getFullYear();
+
+</script>
+
+<script>
+// Used for w3js include techniques
+w3.includeHTML();
+</script>
+</body>
+</html>
