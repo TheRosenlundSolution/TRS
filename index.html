@@ -45,7 +45,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 <!-- Top menu -->
 <div class="w3-top" style="height: 65px;">
-  <div class="w3-white w3-text-white w3-xlarge" style="max-width:100%;margin:auto;color: #000066 !important;background-color: #000026!important;height: 65px;">
+  <div class="w3-white w3-text-white w3-xlarge" style="max-width:100%;margin:auto;color: #000066 !important;background-color: #000026 !important;height: 65px;">
     <p class="w3-padding-16 w3-left w3-hover-text-light-blue w3-text-white" style="/*color: #000066;height: 65px;*/margin-left: 20px;margin-top: 5px;cursor: pointer;" onclick="w3_open()">☰</p>
     <p class="w3-right w3-text-white w3-padding-16 w3-hide-small w3-hide-medium w3-hover-text-light-blue" style="margin-right: 20px;margin-top:  5px;cursor: pointer;">eMail</p>
     <button class="w3-right w3-padding-16 w3-hide-small w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 18px;height: 65px;">eMail</button>
@@ -57,8 +57,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
       <p class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: -20px;margin-left: 70px;">The Rosenlund Solution</p><br>
       
       <p class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: -53px;margin-left: 65px;">The Rosenlund Solution</p></a><br>
-
-      <!-- <p class="w3-hide-medium w3-hide-large w3-text-white" style="font-size: 8px;">The Rosenlund Solution</p></a> -->
 
       <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-medium w3-hide-large" style="height:50px;width:50px;margin-top: -220px;margin-left: -5px;" alt="TheRosenlundSolution"></a><br>
     </div>
@@ -91,56 +89,120 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
 
-    <div class="w3-half">
-      <img class="w3-round" src="laptop-cleaning2.jpg" alt="Popsicle" width="400" height="200">
+    <div class="w3-quarter">
+      <img class="w3-round" src="laptop-cleaning2.jpg" alt="Popsicle" style="width: 100%;">
       <h3 class="w3-text-white">Cleaning Solutions</h3>
-      
+      <!--button onclick="readMeOrganize('clean')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
+      Read More</button-->
 
-      <div id="clean" class="w3-container trs-color w3-text-white">
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
+
+      <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container trs-color w3-text-white">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
+            <p class="w3-large">Cleaning concepts since the mid to late 90's<br>
+
+              In my youth, my mother taught me the value of having clean clothes and a clean, neat and tidy room.  As the years went on I had discovered that the scouts were teaching me very similar concepts.  After high school I had opportunity to work with my dad and brothers cleaning business that was later handed over to me after the Marines.  The Marines also gave me strong cleanliness disciplines.  Then many years later, what started out as cleaning carpets and upholstery has only grown.   We took on lawn care that expanded into cleaning up and organizing yards and homes outside and in. And now my knowledge and understanding of cleaning practices has now expanded into all aspects of life.   What used to be just a floor cleaning business has now expanded into understanding technology and how to even keep our tech clean and save and secure because tech is very much also a good part of the life that we are all living.  It keeps us communicating and offers us enterainment and even helps us stay organized.  So having a clean home means so much more than just having clean floors, furniture and a clean yard.   We now consider all aspects of our living environment and the things that we use from day to day.<br>
+
+              Cleanliness has become a part of who we are.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!--div id="clean" class="w3-hide w3-container trs-color w3-text-white">
         <p>Cleaning concepts since the mid to late 90's<br>
 
           In my youth, my mother taught me the value of having clean clothes and a clean, neat and tidy room.  As the years went on I had discovered that the scouts were teaching me very similar concepts.  After high school I had opportunity to work with my dad and brothers cleaning business that was later handed over to me after the Marines.  The Marines also gave me strong cleanliness disciplines.  Then many years later, what started out as cleaning carpets and upholstery has only grown.   We took on lawn care that expanded into cleaning up and organizing yards and homes outside and in. And now my knowledge and understanding of cleaning practices has now expanded into all aspects of life.   What used to be just a floor cleaning business has now expanded into understanding technology and how to even keep our tech clean and save and secure because tech is very much also a good part of the life that we are all living.  It keeps us communicating and offers us enterainment and even helps us stay organized.  So having a clean home means so much more than just having clean floors, furniture and a clean yard.   We now consider all aspects of our living environment and the things that we use from day to day.<br>
 
           Cleanliness has become a part of who we are.
         </p>
-      </div>
+      </div-->
     </div>
     
-    <div class="w3-half">
-      <img class="w3-round" src="foodPrep.jpg" alt="Steak" width="400" height="200">
+    <div class="w3-quarter">
+      <img class="w3-round" src="foodPrep.jpg" alt="Steak" style="width: 100%;">
       <h3 class="w3-text-white">Organizational Solutions</h3>
       <!--button onclick="readMeOrganize('organize')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
       Read More</button-->
+      <button onclick="document.getElementById('id02').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
 
-      <div id="organize" class="w3-container trs-color w3-text-white">
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container trs-color w3-text-white">
+            <span onclick="document.getElementById('id02').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
+            <p class="w3-large">Organizational practices since the 80's<br>
+
+              Also planted in me by my Mother in my early youth, the value in having a neat, clean and organized bedroom.   Even though I have not always been very good at keeping my room clean, it is what I strive for each day.   I have taken my knowledge of organizing to a new level years ago when I was hired on by a professional organizing company.  Our team cleaned and organized homes, storage spaces and work spaces. As I grew in knowledge and experience, having a team helped me learn how to take these concepts into supervisory and management roles and practices.  Teaching others what I have learned and staying organized in the process brings it all to a whole new level.  Those were some good times learning and growing as a team.   We now believe in having a house of order and cleanliness and strive for this in our own home which gives us the knowledge and understanding of how we can help others in achieving the same.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--div id="organize" class="w3-hide w3-container trs-color w3-text-white">
         <p>Organizational practices since the 80's<br>
 
           Also planted in me by my Mother in my early youth, the value in having a neat, clean and organized bedroom.   Even though I have not always been very good at keeping my room clean, it is what I strive for each day.   I have taken my knowledge of organizing to a new level years ago when I was hired on by a professional organizing company.  Our team cleaned and organized homes, storage spaces and work spaces. As I grew in knowledge and experience, having a team helped me learn how to take these concepts into supervisory and management roles and practices.  Teaching others what I have learned and staying organized in the process brings it all to a whole new level.  Those were some good times learning and growing as a team.   We now believe in having a house of order and cleanliness and strive for this in our own home which gives us the knowledge and understanding of how we can help others in achieving the same.
         </p>
-      </div>
+      </div-->
     </div>
-  </div>
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-half">
-      <img class="w3-round" src="security-solutions.jpg" alt="Cherries" width="400" height="200">
+  <!--/div>
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food"-->
+    <div class="w3-quarter">
+      <img class="w3-round" src="security-solutions.jpg" alt="Cherries" style="width: 100%;">
       <h3 class="w3-text-white">Preparedness Solutions</h3>
       <!--button onclick="readMeSecure('secure')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
       Read More</button-->
+      <button onclick="document.getElementById('id03').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
 
-      <div id="secure" class="w3-container trs-color w3-text-white">
+      <div id="id03" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container trs-color w3-text-white">
+            <span onclick="document.getElementById('id03').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
+            <p class="w3-large">We have been practicing preparedness practices since we were<br> &quot;knee high to a grass hopper&quot;<br>
+
+              Preparation for me started in the Scouts when I was in my youth.   Years later I joined the Marines where I took preparation to a whole new level.   Since then I have served as a youth leader for my church and have taken my knowledge from my entire life into family life.   We love the outdoors where we get to experience hiking, camping and overlanding.   We have felt that traveling and moving around has been helping us become better prepared.   We are not fully and completely prepared, but we are much closer now than we were 10 or more years ago. And the way we view preparedness is that we are in a constant state of prep and readiness because of how life randomly changes. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--div id="secure" class="w3-hide w3-container trs-color w3-text-white">
         <p>We have been practicing preparedness practices since we were<br> &quot;knee high to a grass hopper&quot;<br>
 
           Preparation for me started in the Scouts when I was in my youth.   Years later I joined the Marines where I took preparation to a whole new level.   Since then I have served as a youth leader for my church and have taken my knowledge from my entire life into family life.   We love the outdoors where we get to experience hiking, camping and overlanding.   We have felt that traveling and moving around has been helping us become better prepared.   We are not fully and completely prepared, but we are much closer now than we were 10 or more years ago. And the way we view preparedness is that we are in a constant state of prep and readiness because of how life randomly changes. 
         </p>
-      </div>
+      </div-->
     </div>
-    <div class="w3-half">
-      <img class="w3-round" src="firstAid2.jfif" alt="Pasta and Wine" width="400" height="200">
+    <div class="w3-quarter">
+      <img class="w3-round" src="firstAid2.jfif" alt="Pasta and Wine" style="width: 100%;">
       <h3 class="w3-text-white">Security Solutions</h3>
       <!--button onclick="readMePrep('prep')" class="w3-btn trs-text-blue w3-white w3-hover-light-blue w3-hover-text-white w3-round" style="padding: 10px;margin-bottom: 20px;">
       Read More</button-->
+      <button onclick="document.getElementById('id04').style.display='block'" class="w3-round w3-button w3-black">Read More</button>
 
-      <div id="prep" class="w3-container trs-color w3-text-white">
+      <div id="id04" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container trs-color w3-text-white">
+            <span onclick="document.getElementById('id04').style.display='none'" class="w3-xxlarge w3-button w3-display-topright">&times;</span>
+            <p class="w3-large">Security practices since the late 90's<br>
+
+              What started out as simply watching over scouts during scout camp in my youth, turned into securing buildings while working for a security company in the late 90's and on to the Marines as a grunt securing a multitude of other things as I have learned security practices and improvements over the years.   I have been around the world securing vehicles, parking lots, boat ramps, people, ammunition...the list goes on.   And then even for my church I served as Temple security for the Kansas City Missouri Temple for the Church of Jesus Christ of Latter Day Saints when it first opened for it's open house.   I also served as building lockup and security for a Ward in Rexburg Idaho for a time.   And now I am learning to secure computers and help with internet security, also known as cyber security and information security.   Security is very much an important part of every day life....especially in our increasingly growing sketchy world that we are now living in today.<br>
+
+              So as Master Yoda would say....<br>
+              "May the force be with you!" 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--div id="prep" class="w3-hide w3-container trs-color w3-text-white">
         <p>Security practices since the late 90's<br>
 
           What started out as simply watching over scouts during scout camp in my youth, turned into securing buildings while working for a security company in the late 90's and on to the Marines as a grunt securing a multitude of other things as I have learned security practices and improvements over the years.   I have been around the world securing vehicles, parking lots, boat ramps, people, ammunition...the list goes on.   And then even for my church I served as Temple security for the Kansas City Missouri Temple for the Church of Jesus Christ of Latter Day Saints when it first opened for it's open house.   I also served as building lockup and security for a Ward in Rexburg Idaho for a time.   And now I am learning to secure computers and help with internet security, also known as cyber security and information security.   Security is very much an important part of every day life....especially in our increasingly growing sketchy world that we are now living in today.<br>
@@ -148,7 +210,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
           So as Master Yoda would say....<br>
           "May the force be with you!" 
         </p>
-      </div>
+      </div-->
     </div>
   </div>
   
@@ -466,10 +528,10 @@ document.getElementById("ProfileDate").innerHTML = trsProfileDate.getFullYear();
       
 </script>
 <script type="text/javascript">
-  // When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
-// window.onscroll = function() {scrollDisplayHeader()};
+
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
