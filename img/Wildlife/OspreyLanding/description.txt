@@ -1,0 +1,1 @@
+This folder contains Ospray Landing blog post photos.
