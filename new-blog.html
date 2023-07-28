@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+<title>Idaho Outdoor Geeks</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="msvalidate.01" content="03FB5269D7F661C34901C4DB20E70ED7" />
+
+<link rel="shortcut icon" type="image/png" href="img/trs-square3.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<!-- <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152564535-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-152564535-1');
+
+</script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- <link rel="stylesheet" href="main.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<link rel="stylesheet" type="text/css" href="modal.css">
+<!-- <link rel="stylesheet" type="text/css" href="ModalSlideShow.css"> -->
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"> -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script type="text/javascript" src='modal.js'></script>
+<!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+<style>
+/*body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}*/
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+.trs-box:hover {
+  border-style: solid;
+  color: white;
+}
+.trsHov:hover {color: #000066;text-decoration: none;}
+.trsHov-light-blue:hover {background-color: #87CEEB !important;}
+.trs-text-blue {color: #000026 !important;}
+.trs-color {background-color: #000026!important;}
+.trs-text-green {color:  #004400 !important;}
+.trs-green {background-color: #004400 !important;}
+a:hover {color: #000066;text-decoration: none;}
+/*.trs-btn {border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;text-align:center;cursor:pointer;white-space:nowrap}*/
+/* slideshow modal */
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 6.66666%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+/*  padding-top: 0px;*/
+  /*margin-right: -10px;*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /*background-color: #000066;*/
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  /*background-color: #000066;*/
+  /*margin: auto;*/
+  margin-left: 0px;
+  /*margin-right: -25px;*/
+  /*padding: 0;*/
+  width: 100%;
+  max-width: 1250px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+/*.close:hover {color: color: blue;}*/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.close:hover,
+.prev:hover,
+.next:hover {
+  /*background-color: rgba(0, 0, 0, 0.8);*/
+  background-color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: white;
+  padding: 2px 16px;
+  color: #000066;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.no-underline {text-decoration: none;}
+.trs-padding {padding: 10px;}
+</style>
+<body class="w3-text-white trs-color">
+
+<!-- <p w3-include-html="new-header.html"></p> -->
+
+<!-- Top menu -->
+<div class="w3-top" style="height: 65px;">
+  <div class="w3-white w3-text-white w3-xlarge" style="max-width:100%;margin:auto;color: #000066 !important;background-color: #000026 !important;height: 65px;">
+    <p class="w3-padding-16 w3-left w3-hover-text-light-blue w3-text-white" style="/*color: #000066;height: 65px;*/margin-left: 20px;margin-top: 5px;cursor: pointer;" onclick="w3_open()">☰</p>
+    <!--p class="w3-right w3-text-white w3-padding-16 w3-hide-small w3-hide-medium w3-hover-text-light-blue" style="margin-right: 20px;margin-top:  5px;cursor: pointer;">eMail</p>
+    <button class="w3-right w3-padding-16 w3-hide-small w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 18px;height: 65px;">eMail</button>
+    <button class="w3-right w3-padding-16 w3-hide-medium w3-hide-large w3-btn w3-text-white w3-hover-text-light-blue" style="margin-right: 5px;font-size: 15px;height: 65px;">eMail</button-->
+    <div class="w3-center w3-padding-16">
+      <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-small w3-hide-medium" style="height:50px;width:50px;margin-top: -30px;margin-right: 70px;text-decoration: none;" alt="TheRosenlundSolution">
+        <img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-small w3-hide-large" style="height:50px;width:50px;margin-top: -30px;margin-left: 30px;text-decoration: none;" alt="TheRosenlundSolution"><br>
+      
+      <p class="w3-hide-small w3-hide-medium w3-text-white" style="margin-top: -20px;margin-right: 60px;">The Rosenlund Solution</p><br>
+      
+      <p class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: -53px;margin-left: 65px;">The Rosenlund Solution</p></a><br>
+
+      <a href="index.html" style="text-decoration: none;"><img src="trs-square-eye-transparent.png" class="w3-center w3-circle w3-hide-medium w3-hide-large" style="height:50px;width:50px;margin-top: -220px;margin-left: -5px;" alt="TheRosenlundSolution"></a><br>
+    </div>
+  </div>
+</div>
+
+
+<!-- Toggle menu for medium and large screens (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left trs-green w3-text-white" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">Close Menu</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">Home</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">Who are we?</a>
+  <a href="new-blog.html" onclick="w3_close()" class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">Blog</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">IT</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">Info</a>
+  <a  href="mailto:therosenlundsolution@gmail.com" onclick="w3_close()" class="w3-bar-item w3-button" style="padding-top: 20px;padding-right: 20px;padding-bottom: 20px;padding-left: 20px;">eMail Contact</a>
+</nav>
+
+
+<p class="w3-hide-large w3-hide-medium w3-text-white" style="font-size: 11px;margin-top: 60px;margin-bottom: -100px;text-align: center;/*color: #000066 !important;*/"><span style="font-size: 20px;">The Rosenlund Solution</span><br>Technical Understanding for Preparedness Solutions</p>
+<h6 class="w3-hide-small w3-hide-large w3-text-white" style="margin-top: 80px;margin-bottom: -100px;text-align: center;">Technical Understanding for Preparedness Solutions</h6>
+<!-- <h6 class="w3-hide-small w3-hide-medium" style="margin-top: 80px;margin-bottom: -100px;text-align: center;margin-left: -15px;">Getting Organized and helping you Understand your Technology for Simpler Preparedness Solutions</h6> -->
+
+
+<!--#000027 35% , #424432 60%-->
+
+
+<!-- Page Container -->
+<div class="w3-container w3-content trs-color" style="max-width:1400px;margin-top:30px;padding-top: 80px;">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3" style="border-right: 2px solid lightgray;">
+      <!-- Profile -->
+      <div class="w3-round">
+        <div class="w3-container w3-center">
+          <h4 class="w3-center">Meet the</h4>
+          <img src="../img/WebsiteLogos/moose.png" class="w3-circle" alt="IdahoOutdoorGeeks" style="height:40px;width:40px;margin-top: 3px;" alt="IdahoOutdoorGeeks">
+          <!--for large and small screens-->
+          <h4 class="w3-center w3-hide-medium">IdahoOutdoorGeeks</h4>
+          <!--for medium screens-->
+          <p class="w3-center w3-hide-small w3-hide-large" style="font-size: 10px;">IdahoOutdoorGeeks</p>
+
+         <img src="img/58381085_2406534429357636_4803605506767716352_n.jpg" class="w3-center w3-round" style="width: 100%;" alt="FamilyPhoto">
+         <hr>
+         <!-- <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p> -->
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Idaho, US</p>
+         <p><i class="fas fa-hiking fa-fw w3-margin-right w3-text-theme"></i> June 2013 - <span id="OutdoorGeeks"></span></p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-round">
+        <div class="w3-text-white">
+          <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-left-align w3-hover-text-light-blue" style="background-color: #004400;"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> Our Groups</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>On Facebook:
+              <a href="https://www.facebook.com/groups/155889281201610/?multi_permalinks=3073563499434159" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Idaho Beauty, </a>
+              <a href="https://www.facebook.com/groups/1214995558553714/?multi_permalinks=4480096638710240" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Idaho Hiking and Backpacking, </a>
+              <a href="https://www.facebook.com/groups/566620860104681/?multi_permalinks=4169391443160920" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Wild Idaho, </a>
+              <a href="https://www.facebook.com/groups/410413273198242/?multi_permalinks=880561706183394" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Scenic Idaho</a>
+            </p>
+            <p>On YouTube:
+              <a href="https://www.youtube.com/c/venture4wd" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Venture4wd, </a>
+              <a href="https://www.youtube.com/c/TheOutdoorGearReview" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">The Outdoor Gear Review, </a>
+              <a href="https://www.youtube.com/c/MattsOffRoadRecovery" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Matts Offroad Recover, </a>
+              <a href="https://www.youtube.com/c/BornAndRaisedOutdoors1" class="w3-hover-text-indigo" target="_blank" style="color: #66ccff;text-decoration: none;">Born and Raised Outdoors</a>
+            </p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-left-align w3-hover-text-light-blue" style="background-color: #004400;"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> Our Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p>Elerae turns 8 June 24th</p>
+            <p>Elerae will be baptized, date not yet determined.</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-left-align w3-hover-text-light-blue" style="background-color: #004400;"><i class="fa fa-users fa-fw w3-margin-right"></i> Our Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="img/2021-06-13 21.23.32.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-14 21.30.58.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-21 20.55.32.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-19 21.16.51.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-19 21.19.55.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-23 19.51.21.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-24 20.49.42.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 17.00.06.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 17.38.25.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 18.21.54.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 18.29.47.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 18.31.55.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 19.44.13.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/2021-06-25 19.44.56.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           
+           
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-round w3-text-white trs-color w3-hide-small">
+        <div class="w3-container">
+          <p>Our Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Family</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Mountains</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Nature</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Books</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Art</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Trails</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Music</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Travel</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Movies</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Camping</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Technology</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Crafting</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Preparedness</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Baking</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Hiking</span>
+            <span class="w3-tag w3-small w3-hover-text-light-blue" style="background-color: #004400;cursor: pointer;">Biking</span>
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!--************************************POSSIBLY FUTURE COMPONENT DO NOT DELETE *************************************-->
+      <!-- Alert Box -->
+      <!--div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>People are looking at your profile. Find out who.</p>
+      </div-->
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          
+          
+
+
+          <!--************************************ Posting: Evening Moose Butte ***********************************-->
+          <div class="w3-round w3-text-white trs-color w3-margin-bottom">
+            <div class="w3-container w3-padding">
+              
+              <h4 class="w3-center">Pioneer Day Fireworks Grand Finale- Bishop's Home Saturday, July 22nd 2023</h4><br>
+
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-center">
+                  
+                  <video style="width: 90%;" controls>
+                    <source src="img/PioneerDay/2023-07-22 22.10.14.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                      
+              
+              </div>
+
+              <hr>
+
+              <h4 class="w3-center">Pioneer Day Fireworks - Bishop's Home Saturday, July 22nd 2023</h4><br>
+              
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-center">
+                  
+                  <video style="width: 90%;" controls>
+                    <source src="img/PioneerDay/2023-07-22 22.07.46.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                      
+              
+              </div>
+
+              <hr>
+
+              <h4 class="w3-center">Osprey Landing - Chester Wetlands - Friday July 14th 2023</h4><br>
+              
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-center">
+                  
+                  <video style="width: 90%;" controls>
+                    <source src="img/Wildlife/OspreyLanding/2023-07-14 17.55.26.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                      
+              
+              </div>
+              
+              <hr>
+                <!--****************************** POSSIBLY FUTURE COMPONENT DO NOT DELETE *********************************-->
+                <!-- Trigger the Modal -->
+                <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+
+                <!--button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-thumbs-up"></i>  Like</button--> 
+                <!--button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-comment"></i>  Comment</button--> 
+
+              <!-- <h6 class="w3-opacity">Social Media template by w3.css</h6> -->
+              <!-- <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p> -->
+              <!-- <button type="button" class="w3-btn w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-pencil"></i>  Post</button>  -->
+            </div>
+          </div>
+
+
+
+          <!-- Posting: Evening Walk around a Butte -->
+          <div class="w3-round w3-text-white trs-color w3-margin-bottom w3-padding-bottom">
+            <div class="w3-container w3-padding">
+              <h4 class="w3-center">Evening Walk around a Butte - Tuesday, October 5th 2021</h4><br>
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                  <img src="img/Evening Butte Walk/2021-10-05 17.07.28.jpg" style="width:100%;cursor: pointer;" onclick="openModal();currentSlide(1)" class="hover-shadow w3-round">
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" style="position: absolute;z-index: 1;color: #000066;" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+ 
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.28.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.34.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.36.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.00.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.02.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">7 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.04.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">8 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.06.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">9 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.11.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">10 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.14.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">11 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.08.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">12 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.10.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">13 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.12.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">14 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.15.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">15 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.16.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                          
+                      <a class="prev" style="color: #000066;" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" style="color: #000066;" onclick="plusSlides(1)">&#10095;</a>
+
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+
+
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.28.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(1)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(2)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.34.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(3)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.36.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(4)" alt="Evening walk around a northern butte">
+                      </div>
+
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 18.41.00.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(5)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 18.41.02.jpg" class="w3-round" style="width:100%;cursor: popadding: 3px;inter;" onclick="currentSlide(6)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.04.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(7)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.06.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(8)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.11.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(9)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.14.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(10)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.08.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(11)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.10.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(12)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.12.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(13)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.15.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(14)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.16.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(15)" alt="Evening walk around a northern butte">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                      
+                <div class="w3-half">
+                  <div class="w3-display-container w3-opacity">
+                    <!-- <img src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom"> -->
+                    <img src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" class="w3-round" style="width:100%;cursor: pointer;" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <div class="w3-display-middle w3-center" style="margin-top: -20px;cursor: pointer;" onclick="openModal();currentSlide(1)">
+                      <h3><span class="w3-text-white w3-xxlarge"><b>+ 13</b></span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!--****************************** POSSIBLY FUTURE COMPONENT DO NOT DELETE *********************************-->
+                <!-- Trigger the Modal -->
+                <!-- <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px"> -->
+
+                <!--button type="button" class="w3-btn w3-theme-d1 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-thumbs-up"></i>  Like</button--> 
+                <!--button type="button" class="w3-btn w3-theme-d2 w3-margin-bottom w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-comment"></i>  Comment</button--> 
+
+              <!-- <h6 class="w3-opacity">Social Media template by w3.css</h6> -->
+              <!-- <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p> -->
+              <!-- <button type="button" class="w3-btn w3-theme w3-hover-text-light-blue" style="background-image: linear-gradient(to right, #000066 , #006600);"><i class="fa fa-pencil"></i>  Post</button>  -->
+            </div>
+          </div>
+
+
+
+          <!-- Posting: Evening Walk around a Butte -->
+          <!--div class="w3-card w3-round w3-white w3-margin-bottom">
+            <div class="w3-container w3-padding">
+              <h4>Old Posting</h4><br>
+              <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half">
+                  <img src="img/Evening Butte Walk/2021-10-05 17.07.28.jpg" style="width:100%;cursor: pointer;" onclick="openModal();currentSlide(1)" class="hover-shadow w3-round">
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" style="position: absolute;z-index: 1;color: #000066;" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+ 
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.28.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.34.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 17.07.36.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.00.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.02.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">7 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.04.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">8 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.06.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">9 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.11.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">10 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.41.14.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">11 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.08.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">12 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.10.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">13 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.12.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">14 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.15.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                      <div class="mySlides">
+                        <div class="numbertext">15 / 15</div>
+                        <div class="w3-container w3-center">
+                          <img src="img/Evening Butte Walk/2021-10-05 18.48.16.jpg" style="width: 85%;">
+                        </div>
+                      </div>
+                          
+                      <a class="prev" style="color: #000066;" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" style="color: #000066;" onclick="plusSlides(1)">&#10095;</a>
+
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+
+
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.28.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(1)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(2)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.34.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(3)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 17.07.36.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(4)" alt="Evening walk around a northern butte">
+                      </div>
+
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 18.41.00.jpg" class="w3-round" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(5)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor" src="img/Evening Butte Walk/2021-10-05 18.41.02.jpg" class="w3-round" style="width:100%;cursor: popadding: 3px;inter;" onclick="currentSlide(6)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.04.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(7)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.06.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(8)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.11.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(9)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.41.14.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(10)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.08.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(11)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.10.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(12)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.12.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(13)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.15.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(14)" alt="Evening walk around a northern butte">
+                      </div>
+                      <div class="column">
+                        <img class="cursor w3-round" src="img/Evening Butte Walk/2021-10-05 18.48.16.jpg" style="width:100%;cursor: pointer;padding: 3px;" onclick="currentSlide(15)" alt="Evening walk around a northern butte">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                      
+                <div class="w3-half">
+                  <div class="w3-display-container w3-opacity">
+                    
+                    <img src="img/Evening Butte Walk/2021-10-05 17.07.32.jpg" class="w3-round" style="width:100%;cursor: pointer;" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    <div class="w3-display-middle w3-center" style="margin-top: -20px;cursor: pointer;" onclick="openModal();currentSlide(1)">
+                      <h3><span class="w3-text-white w3-xxlarge"><b>+ 13</b></span></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div-->
+
+
+          
+
+        <!--*************************End of posts*******************************8-->
+        </div>
+      </div>
+      
+      <!--div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+            </div>
+          </div>
+          
+      </div-->
+      
+      
+
+      
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2" style="border-left: 2px solid lightgray;">
+      <div class="w3-round w3-text-white trs-color w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="img/beautiful2.jpg" alt="Forest" style="width:100%;">
+          <!--for large and small screens-->
+          <div class="w3-hide-medium">
+            <p><strong>Allison's Birthday<br></strong></p>
+            <p>Tuesday, August 15th 2023</p>
+          </div>
+          <!--for medium screens-->
+          <div class="w3-hide-small w3-hide-large" style="font-size: 10px;">
+            <p><strong>Allison's Birthday<br></strong></p>
+            <p>Tuesday, August 15th 2023</p>
+          </div>
+          <!--for large and small screens-->
+          <div class="w3-hide-medium">
+            <button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-left-align w3-hover-text-light-blue" style="background-color: #004400;"><!--i class="fa fa-info fa-fw w3-margin-right"></i--> More Info</button>
+            <div id="Demo4" class="w3-hide w3-container">
+              <p>Allison's birthday</p>
+              <p>If there is more information, this is where it will be.</p>
+            </div>
+          </div>
+          <!--for medium screens-->
+          <div class="w3-hide-large w3-hide-small" style="font-size: 10px;">
+            <button onclick="myFunction('Demo5')" class="w3-btn w3-block w3-center w3-hover-text-light-blue" style="background-color: #004400;font-size: 8px;"><!--i class="fa fa-info fa-fw w3-margin-right"></i-->More Info</button>
+            <div id="Demo5" class="w3-hide w3-container">
+              <p>Allison's birthday</p>
+              <p>If there is more information, this is where it will be.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <!--************************************POSSIBLY FUTURE COMPONENT DO NOT DELETE *************************************-->
+      <!--div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="avatar6.png" alt="Avatar" style="width:50%"><br>
+          <span>Jane Doe</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section w3-hover-text-light-blue" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section w3-hover-text-light-blue" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div-->
+      <br>
+      
+      <!--************************************POSSIBLY FUTURE COMPONENT DO NOT DELETE *************************************-->
+      <!--div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br-->
+      
+      <div class="w3-round w3-padding w3-center" style="background-color: #004400;z-index: 0;">
+        <!-- <p><i class="fas fa-kiwi-bird w3-xxlarge"></i></p> -->
+        <!-- <img src="img/moose.png" class="w3-circle" alt="IdahoOutdoorGeeks" style="height:40px;width:40px;margin-top: -13px;" alt="IdahoOutdoorGeeks"> -->
+        <p class="w3-text-white w3-center" style="font-size: 12px;"><!--More content coming soon.--><br>  Updated  - <span id="CurrentUpdate"></span> <span id="CurrentYear"></span></p>
+        <p class="w3-text-white w3-center" style="font-size: 12px;">&copy; The Rosenlund Solution 2005 - <span id="FooterDate"></span></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- </div> -->
+<div class='w3-row w3-center w3-padding-16' style="z-index: 3">
+    <button onclick="topFunction()" id="myBtn" type="button" class="trs-green w3-right w3-margin-right w3-padding w3-large w3-text-white trsHov-light-blue w3-circle w3-btn w3-large" style="box-shadow: 0px 5px 15px gray;"><i class="fa fa-arrow-up w3-hover-text-white w3-center" style="width: 35px;"></i></button>
+</div>
+
+<!-- Footer -->
+<!--footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer-->
+
+
+<!--footer id="foot" class="w3-center w3-padding-48 w3-text-white" style="background-image: linear-gradient(to right, #000066 , #006600);z-index: 0;">
+  <div w3-include-html="footer.html"></div>
+  <p class="w3-text-white">More content coming soon.  Updated  - <span id="CurrentUpdate"></span> <span id="CurrentYear"></span></p>
+  <p class="w3-text-white">&copy; The Rosenlund Solution 2005 - <span id="FooterDate"></span></p>
+</footer-->
+
+
+
+<script type="text/javascript">
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+  // Used to toggle the menu on small screens when clicking on the menu button
+function myDropDown() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+  //slideshow modal
+  // Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+<script>
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = -10;
+    document.documentElement.scrollTop = -10;
+}
+
+</script>
+
+<script>
+// Script to open and close sidebar
+/*function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}*/
+</script>
+
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<script>
+// for date under family profile intro on main page
+var trsProfileDate = new Date();
+          
+document.getElementById("ProfileDate").innerHTML = trsProfileDate.getFullYear();
+      
+</script>
+
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("CurrentUpdate").innerHTML = months[d.getMonth()];
+
+</script>
+
+<script>
+
+var currentYear = new Date();
+          
+document.getElementById("CurrentYear").innerHTML = currentYear.getFullYear();
+          
+</script>
+
+<script>
+// for footer date in on all pages
+var trsFooterDate = new Date();
+
+document.getElementById("FooterDate").innerHTML = trsFooterDate.getFullYear();
+
+</script>
+
+<script>
+// for profile date for idaho outdoor geeks
+var trsOutdoorGeeks = new Date();
+
+document.getElementById("OutdoorGeeks").innerHTML = trsFooterDate.getFullYear();
+
+</script>
+
+
+
+<!-- this is the call for the js/html include at the top of the page for calling in the header html -->
+<script>
+// Used for w3js include techniques
+w3.includeHTML();
+</script>
+
+
+</body>
+</html> 
